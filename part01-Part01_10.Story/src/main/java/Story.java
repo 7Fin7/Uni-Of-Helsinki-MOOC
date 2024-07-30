@@ -1,12 +1,13 @@
-
+// Introduce the scanner tool used for reading user input
 import java.util.Scanner;
 
 public class Story {
 
     public static void main(String[] args) {
+        // Create a tool for reading user input and name it scanner
         Scanner scanner = new Scanner(System.in);
 
-        // Write your program here
+        // Simple conversation with string concatenation
         System.out.println("I will tell you a story, but I need some information first.");
         System.out.println("What is the main character called?");
         String name = scanner.nextLine();

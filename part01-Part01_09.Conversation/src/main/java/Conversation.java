@@ -1,16 +1,17 @@
-
+// Introduce the scanner tool used for reading user input
 import java.util.Scanner;
 
 public class Conversation {
 
     public static void main(String[] args) {
+        // Create a tool for reading user input and name it scanner
         Scanner scanner = new Scanner(System.in);
 
-        // Write your program here
+        // Simple conversation
         System.out.println("Greetings! How are you doing?");
-        String first = scanner.nextLine();
+        String firstInput = scanner.nextLine();
         System.out.println("Oh, how interesting. Tell me more!");
-        String second = scanner.nextLine();
+        String secondInput = scanner.nextLine();
         System.out.println("Thanks for sharing!");
     }
 }
