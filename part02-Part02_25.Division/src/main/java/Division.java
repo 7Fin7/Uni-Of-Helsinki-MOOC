@@ -1,19 +1,17 @@
 
-
 public class Division {
 
+    // Main method
     public static void main(String[] args) {
-        
-        // Once you have implemented the division method, you can
-        // try it out here. Fopr example division(3,5);
-        // should print "0.6"
-
+        // Call the method division with arguments 3, 5
         division(3, 5);
     }
 
-    // implement the method here
+    // Division method
     public static void division(int numerator, int denominator) {
+        // Calculate division with parameters
         double div = (double) numerator / denominator;
+        // Print result
         System.out.println(div);
     }
 }

@@ -1,13 +1,10 @@
 
 public class StarSign {
 
+    // Main method
     public static void main(String[] args) {
-
         
-        //The tests are not checking the main, so you can modify it freely.
-        //NB: If the tests don't seem to pass, you should try the methods here
-        //in the main to make sure they print the correct shapes!
-        
+        // Testing methods
         printStars(3);
         System.out.println("\n---");  // printing --- between the shapes
         printSquare(4);
@@ -18,31 +15,40 @@ public class StarSign {
         System.out.println("\n---");
     }
 
+    // Method prints the given number of stars and a line break
     public static void printStars(int number) {
-        // first part of the exercise
+        // Loop from 'i' up to 'number'
         for(int i = 0; i < number; i++) {
+            // Print *
             System.out.print("*");
         }
+        // Line break
         System.out.println("");
     }
 
+    // Method prints a square with printStars method
     public static void printSquare(int size) {
-        // second part of the exercise
+        // Loop from 'i' to 'size'
         for (int i = 0; i < size; i++) {
+            // Call printStars method with 'size' as parameter
             printStars(size);
         }
     }
 
+    // Method prints rectangle using printStars method
     public static void printRectangle(int width, int height) {
-        // third part of the exercise
+        // Loop from 'i' to 'height'
         for (int i = 0; i < height; i++) {
+            // Call printStars method with 'width' as parameter
             printStars(width);
         }
     }
 
+    // Method prints a triangle using printStars method
     public static void printTriangle(int size) {
-        // fourth part of the exercise
+        // Loop from 'i' to 'size', inclusive
         for (int i = 1; i <= size; i++) {
+            // Call printStars method with 'i' as parameter
             printStars(i);
         }
     }

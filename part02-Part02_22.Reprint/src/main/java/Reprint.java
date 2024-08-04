@@ -1,28 +1,30 @@
-
+// Scanner class for user input
 import java.util.Scanner;
 
 public class Reprint {
 
     public static void main(String[] args) {
-        // ask the user for how many times should the text be printed
-        // then call the printText-method multiple times with a while-loop
-        
+        // Creating a Scanner object to read input from the user
         Scanner scanner = new Scanner(System.in);
         
+        // Prompt and input how many times to print text
         System.out.println("How many times?");
         int count = Integer.valueOf(scanner.nextLine());
+        
+        // Initialise i to 0
         int i = 0;
         
+        // Loop while i is less than count
         while (i < count) {
+            // Call the method printText
             printText();
+            // Increment i by 1
             i++;
         }
     }
     
-    // Don't change the next line that defines the method!
-    // (We aren't giving a method a parameter yet)
     public static void printText() {
-        // write some code here
+        // Print text
         System.out.println("In a hole in the ground there lived a method");
     }
 }

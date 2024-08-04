@@ -1,42 +1,39 @@
-
+// Scanner class for user input
 import java.util.Scanner;
 
 public class RepeatingBreakingAndRemembering {
 
     public static void main(String[] args) {
-        
-        // This exercise is worth five exercise points, and it is 
-        // gradually extended part by part.
-        
-        // If you want, you can send this exercise to the server
-        // when it's just partially done. In that case the server will complain about 
-        // the parts you haven't done, but you'll get points for the finished parts.
-        
+        // Creating a Scanner object to read input from the user
         Scanner scanner = new Scanner(System.in);
 
+        // Initialise variables to 0
         int result = 0;
         int count = 0;
         int even = 0;
         int odd = 0;
+        
+        // Prompt user for numbers
         System.out.println("Give numbers:");
         
+        // Start infinite loop
         while (true) {
-            // input number
+            // Input number
             int num = scanner.nextInt();
             
-            // breaking condition
+            // Breaking condition
             if (num == -1) {
                 break;
             }
             
-            // increment odd and even numbers
+            // Increment odd and even numbers
             if (num % 2 == 0) {
                 even++;
             } else {
                 odd ++;
             }
                 
-            // calculations
+            // Calculations
             result += num;
             count += 1;
         }
