@@ -1,4 +1,3 @@
-// Testing MAC
 
 import java.util.ArrayList;
 import java.util.Scanner;
