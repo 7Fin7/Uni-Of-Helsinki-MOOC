@@ -5,30 +5,36 @@ import java.util.Scanner;
 public class AverageOfAList {
 
     public static void main(String[] args) {
+        // Create Scanner object to read input from the user
         Scanner scanner = new Scanner(System.in);
 
-        // implement here a program, that first reads user input
-        // adding them on a list until user gives -1.
+        // Create ArrayList to store numbers
         ArrayList<Integer> numbers = new ArrayList<>();
         
+        // Infinite loop
         while (true) {
+            // Input number and convert to integer
             int input = Integer.valueOf(scanner.nextLine());
+            
+            // Exit condition
             if (input == -1) {
                 break;
             }
             
+            // If number != -1 then add to list
             numbers.add(input);
         }
         
-        // Then it computes the average of the numbers on the list
-        // and prints it.
+        // Initialise sum and size
         int sum = 0;
         int size = numbers.size();
         
+        // Loop through numbers in list and add to sum
         for (int number: numbers) {
             sum += number;
         }
         
+        // Calculate average and print results
         double average = (double) sum / size;
         System.out.println("Average: " + average);
     }

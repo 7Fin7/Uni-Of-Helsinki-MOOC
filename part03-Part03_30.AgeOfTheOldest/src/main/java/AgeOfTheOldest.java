@@ -6,28 +6,31 @@ public class AgeOfTheOldest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // initialise the maximum age variable
+        // Initialise the maximum age variable
         int maxAge = 0;
         
+        // Infinite loop
         while (true) {
+            // Input string
             String input = scanner.nextLine();
             
-            // if the input is empty, break out of the loop
+            // If the input is empty, break out of the loop
             if (input.isEmpty()) {
                 break;
             }
             
-            // split the input line into name and age using comma
+            // Split the input line into name and age using comma
             String[] parts = input.split(",");
-            // convert age string to integer
+            // Convert age string to integer
             int age = Integer.parseInt(parts[1]);
             
-            // update maxAge if the current age is greater
+            // Update maxAge if the current age is greater
             if (age > maxAge) {
                 maxAge = age;
             }
         }
-        // print the age of the oldest person
+        
+        // Print the age of the oldest person
         System.out.println("Age of the oldest: " + maxAge);
     }
 }

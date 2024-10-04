@@ -4,8 +4,9 @@ import java.util.ArrayList;
 public class IoobProgram {
 
     public static void main(String[] args) {
-        // Modify this program to cause an indexOutOfBoundsException 
+        // Program causes an indexOutOfBoundsException 
 
+        // Create ArrayList to store lines and add some
         ArrayList<String> lines = new ArrayList<>();
         lines.add("Never has a man influenced physics so profoundly as Niels Bohr in the early 1900's");
         lines.add("Going back to this time period, little was known about atomic structure; Bohr set out");
@@ -14,10 +15,13 @@ public class IoobProgram {
         lines.add("you and I have even heard of the quantum theory and atomic structures. Bohr came");
         lines.add("up with his quantum theory while studying...");
 
+        // Loop through ArrayList and print lines
         for (String line : lines) {
             System.out.println(line);
         }
         
+        // Cause indexOutOfBoundsException as ArrayList only up to
+        // index 5
         System.out.println(lines.get(6));
 
     }
